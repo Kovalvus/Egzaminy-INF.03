@@ -1,0 +1,71 @@
+* {
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+.Banner, .Bfooter {
+    background-color: Sienna;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.Bleft, .Bright {
+    background-color: navajowhite;
+    width: 15%;
+    height: 700px;
+}
+
+.Bmiddle {
+    width: 70%;
+    height: 700px;
+    overflow: scroll;
+}
+
+.Container {
+    display: flex;
+}
+
+img {
+    width: 100%;
+}
+
+.Bpicture {
+    width: 46%;
+    margin: 2%;
+    position: relative;
+    float: left;
+}
+
+h3, p, a {
+    opacity: 0;
+    position: absolute;
+}
+
+h3 {
+    margin-top: 5%;
+}
+
+p {
+    margin-top: 30%;
+}
+
+a {
+    margin-top: 70%;
+    margin-left: 70%;
+    background-color: sienna;
+    padding: 15px;
+}
+
+.Bpicture img:hover {
+    transition: 0.5s ease;
+    opacity: 0.3;
+}
+
+.Bpicture:hover h3, a  {
+    opacity: 1;
+}
+
+.Bpicture:hover p {
+    opacity: 1;
+}

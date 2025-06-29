@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header class="Banner">
+        <h2>Chat</h2>
+    </header>
+
+    <section class="Container">
+        <section class="BMain">
+            <section class="Bchat" id="Bchat">
+                <section class="Wiadomosc Jolanta">
+                    <img src="Jolka.jpg"> 
+                    <p>Cześć idziesz jutro do kina?</p>
+                </section>
+                <section class="Wiadomosc Krzysiek" >
+                    <img src="Krzysiek.jpg"> 
+                    <p>Tak! A ty?</p>
+                </section>
+            </section>
+            Wpisz wiadomość: <form action="chat.html"><input type="text" class="ChatTextArea" id="ChatTextArea"> <input type="button" value="Wyślij" class="przycisk" onclick="skrypt1()"></form><br>
+            <input type="button" value="Generuj losową odpowiedź" class="przycisk" onclick="skrypt2()">
+            <script>
+                function skrypt1() {
+                    $message = document.getElementById("ChatTextArea").value;
+                    document.getElementById("ChatTextArea").value = "";
+                    $newmessage = document.createElement("div");
+                    $newmessage.innerHTML = "<section class='Wiadomosc Jolanta'><img src='Jolka.jpg'><p>"+$message+"</p></section>";
+                    document.getElementById("Bchat").appendChild($newmessage);
+                    $newmessage.scrollIntoView();
+                }  
+
+                function skrypt2() {
+                    odpowiedzi = [
+                        "Świetnie!",
+                        "Kto gra główną rolę?",
+                        "Lubisz filmy Tego reżysera?",
+                        "Będę 10 minut wcześniej",
+                        "Może kupimy sobie popcorn?",
+                        "Ja wolę Colę",
+                        "Zaproszę jeszcze Grześka",
+                        "Tydzień temu też byłem w kinie na Diunie",
+                        "Ja funduję bilety"
+                    ];
+                    $losowaL = Math.floor(Math.random() * 9);
+                    $message = odpowiedzi[$losowaL];
+                    $newmessage = document.createElement("div");
+                    $newmessage.innerHTML = "<section class='Wiadomosc Krzysiek'><img src='Krzysiek.jpg'><p>"+$message+"</p></section>";
+                    document.getElementById("Bchat").appendChild($newmessage);
+                    $newmessage.scrollIntoView();
+                }
+            </script>
+        </section>
+
+        <section class="Bside">
+            <h3>Chaty</h3>
+            <ul>
+                <li>Ogólny</li>
+                <li>
+                    Tematyczne
+                    <ol>
+                        <li>Turystyczny</li>
+                        <li>Żeglarski</li>
+                        <li>Filatelistyczny</li>
+                        <li>Hodowla zwierzątek domowych</li>
+                    </ol>
+                </li>
+            </ul>
+            <h3>Uczestnicy</h3>
+            <p>Jolanta Nowak</p>
+            <img src="Jolka.jpg" alt="Jolanta Nowak">
+            <p>Krzysztof Łukasiński</p>
+            <img src="Krzysiek.jpg" alt="Krzysztof Łukasiński">
+        </section>
+    </section>
+    <footer class="BFooter">
+        <h5>Chat wykonał: 00000000000</h5>
+    </footer>
+</body>
+</html>

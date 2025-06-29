@@ -1,0 +1,84 @@
+* {
+    font-family: Garamond;
+}
+
+.Banner {
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    width: 80%;
+    height: 80px;
+}
+
+.BMain {
+    width: 80%;
+    height: 600px;
+}
+
+.Bside {
+    background-color: coral;
+    width: 20%;
+    height: 680px;
+}
+
+.Container {
+    display: flex;
+}
+
+.BFooter {
+    background-color: tomato;
+    color: white;
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+    padding: 0px 10px;
+}
+
+h5 {
+    margin: 0;
+}
+
+.Bchat {
+    border: 1px solid tomato;
+    margin: 15px;
+    height: 470px;
+    overflow-y: scroll;
+}
+
+.Wiadomosc {
+    border-radius: 5px;
+    width: 90%;
+    height: 70px;
+    margin: 2%;
+    padding: 3px;
+}
+
+.Jolanta {
+    background-color: #EEE;
+}
+
+.Jolanta img {
+    float: left;
+}
+
+.Krzysiek {
+    background-color: #CCC;
+    text-align: right;
+}
+
+.Krzysiek img {
+    float: right;
+}
+
+.przycisk {
+    background-color: Tomato;
+    border: 1px solid DarkRed;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.ChatTextArea {
+    width: 500px;
+}

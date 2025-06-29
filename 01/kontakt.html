@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firma IT</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <div id="kontener">
+
+        <div class="logo"><img src="logo.png" alt="firma it"></div>
+        <nav class="menu">
+            <a href="index.html">Strona Główna</a>
+            <a href="uslugi.html">Usługi</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+    
+    
+        <header class="baner"><img src="animacja.gif" alt="Usługi informatyczne"></header>  
+        <section class="blok_glowny">
+    <h2>Kontakt</h2>
+    <table>
+        <form action="kontakt.html" id="formularz">
+        <tr>
+            <td>Imię:</td>
+            <td><input type="text" name="imie" id="imie"></td>
+        </tr>
+        <tr>
+            <td>Nazwisko: </td>
+            <td><input type="text" name="nazwisko" id="nazwisko"></td>
+        </tr>
+        <tr>
+            <td>E-mail:</td>
+            <td><input type="email" name="email" id="email"></td>
+        </tr>
+        <tr>
+            <td>Zgłoszenie:</td>
+            <td><textarea name="zgloszenie" id="zgloszenie" cols="40" rows="10"></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="regulamin" id="regulamin">Zapoznałam/em się z regulaminem</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="reset" value="Resetuj">
+                <input type="button" value="Prześlij" onclick="skrypt()"></td>
+        </tr>
+        </form>
+    </table>
+    <hr>
+    <p id="komunikat"></p>
+</section>
+<footer>Autor strony: <b>00000000000</b></footer>
+
+
+<script>
+
+function skrypt() {
+    $imie = document.getElementById('imie').value;
+    $nazwisko = document.getElementById('nazwisko').value;
+    $email = document.getElementById('email').value;
+    $zgloszenie = document.getElementById('zgloszenie').value;
+    $regulamin = document.getElementById('regulamin');
+    $komunikat = document.getElementById('komunikat');
+
+    if($regulamin.checked == false){  
+        $komunikat.style.color = "red";
+        $komunikat.innerHTML = 'Musisz zapoznać się z regulaminem';
+    } else {
+        $komunikat.style.color = "Navy";
+        $komunikat.innerHTML = $imie.toUpperCase() + " " + $nazwisko.toUpperCase() + "<br>" + "Treść Twojej sprawy: " + $zgloszenie;
+    }
+}
+</script>
+
+</body>
+</html>

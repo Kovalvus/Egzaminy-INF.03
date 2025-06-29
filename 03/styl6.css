@@ -1,0 +1,53 @@
+* {
+    font-family: Verdana;
+}
+
+#banery {
+    display: flex;
+}
+
+#baner_logo, #baner_naglowek {
+    background-color: #6F79A8;
+    color: white;
+    height: 140px;
+    float: left
+}
+
+#baner_logo {
+    width: 30%;
+}
+
+#baner_naglowek {
+    width: 70%;
+}
+
+main {
+    clear: both;
+}
+
+main >div {
+    background-color: #9FA8DA;
+    width: 160px;
+    height: 85px;
+    margin: 5px;
+    border: 1px #6F79A8 solid;
+    overflow: hidden;
+    float: left
+}
+
+main > div:hover {
+    background-color: #6F79A8;
+    color: white;
+}
+
+#stopka {
+    clear: both;
+    background-color: #6F79A8;
+    color: white;
+    padding: 5px;
+    text-align: right;
+}
+
+h6 {
+    text-align: center;
+}

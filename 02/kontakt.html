@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komputery</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="kontener">
+        <header id="baner"><img src="animacja.gif" alt="Pogotowie komputerowe   "></header>
+
+        <nav id="menu">
+            <a id="StronaGlowna" href="index.html">Strona Główna</a>
+            <a id="Kontakt" href="kontakt.html">Kontakt</a>
+        </nav>
+
+        <section id="blok1"></section>
+        <section id="blok2">
+            <h2>Kontakt</h2>
+            <table>
+                <form action="kontakt.html">
+                <tr>
+                    <td>Imię: </td>
+                    <td><input type="text" id="imie"></td>
+                </tr>
+                <tr>
+                    <td>Nazwisko: </td>
+                    <td><input type="text" id="nazwisko"></td>
+                </tr>
+                <tr>
+                    <td>E-mail: </td>
+                    <td><input type="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td>Zgłoszenie: </td>
+                    <td>
+                        <select id="zgloszenie">
+                            <option value="Naprawa komputerów">Naprawa komputerów</option>
+                            <option value="Odzyskiwanie danych">Odzyskiwanie danych</option>
+                            <option value="Wirusy">Wirusy</option>
+                            <option value="Konfiguracja LAN">Konfiguracja LAN</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" id="kopia" checked="true">Wyślij kopię wiadomości</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="reset" value="Czyść" id="BtnClear">
+                        <input type="button" value="Wyślij" onclick="skrypt()" id="BtnSubmit">
+                    </td>
+                </tr>
+            </form>
+            </table>
+            <hr>
+            <p id="komunikat"></p>
+        </section>
+        <section id="blok3"></section>
+        
+        <footer>Autor: <i>00000000000</i></footer>
+        <script>
+            
+            function skrypt() {
+                $imie = document.getElementById('imie').value;
+                $nazwisko = document.getElementById('nazwisko').value;
+                $email = document.getElementById('email').value;
+                $zgloszenie = document.getElementById('zgloszenie').value;
+                $komunikat = document.getElementById('komunikat');
+                $komunikat.innerHTML = $imie + ' ' + $nazwisko + '<br>' +  $email.toLowerCase() + '<br>' + 'Usługa: ' + $zgloszenie;
+            }
+        </script>
+    </div>
+</body>
+</html>

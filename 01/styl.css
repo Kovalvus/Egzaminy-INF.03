@@ -1,0 +1,55 @@
+body {
+    font-family: Helvetica;
+    background-color: #EEEEEE;
+}
+
+#kontener {
+    width: 90%;
+    margin: auto;
+}
+
+.logo, .menu {
+    background-color: lightblue;
+    height: 100px;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+}  
+
+.baner {
+    background-color: #DDDDDD;
+    height: 200px;
+    clear: left;
+}
+
+.blok_glowny {
+    color: Navy;
+    margin: 50px;
+    height: 400px;
+}
+
+footer {
+    text-align: right;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+button {
+    background-color: lightblue;
+    color: Navy;
+}
+
+a {
+    color: Navy;
+    font-size: 150%;
+    font-weight: bold;
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+
+}
+
+a:hover {
+    border: 1px solid Navy;
+}

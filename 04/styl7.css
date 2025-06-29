@@ -1,0 +1,73 @@
+* {
+    font-family: 'Cambria';
+}
+
+.containerLeft {
+    background-color: #E1BEE7;
+    width: 25%;
+}
+
+.Maincontainer {
+    display: flex;
+}
+
+#Lblok1 {
+    height: 400px;
+}
+
+#Lblok2 {
+    height: 330px;
+}
+
+.containerRight {
+    width: 75%;
+    font-size: 170%;
+    text-align: center;
+}
+
+#Rblok1 h1 {
+    margin: 0;
+}
+
+#Rblok1 {
+    background-color: #9C64A6;
+    color: white;
+    height: 150px;
+    letter-spacing: 5px;
+}
+
+#Rblok2 {
+    color: indigo;
+    height: 580px;
+
+}
+
+footer {
+    clear: both;
+    background-color: #9C64A6;
+    color: white;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+img {
+    padding: 4px;
+    margin: 15px;
+}
+
+img:hover {
+    padding: 3px;
+    border: 1px dashed indigo;
+}
+
+#aIndex {
+    padding: 25px;
+}
+
