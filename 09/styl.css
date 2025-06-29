@@ -1,0 +1,62 @@
+* {
+    font-family: Georgia;
+}
+
+.Banner {
+    background-color: Navy;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 50%;
+}
+
+.Bmenu {
+    background-color: Navy;
+    padding: 20px;
+}
+
+.RadioName {
+    color: Silver;
+    margin: 50px; 
+}
+
+.RadioName:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.Bleft, .Bright {
+    background-color: Azure;
+    height: 550px;
+}
+
+.Bleft {
+    width: 70%;
+}
+
+.Bright {
+    width: 30%;
+}
+
+.Container {
+    display: flex;
+}
+
+.Bfooter {
+    background-color: Navy;
+    color: white;
+}
+
+table {
+    border: 1px solid Navy;
+    margin: auto;
+    width: 70%;
+}
+
+tr:hover {
+    background-color: skyblue;
+}
+
+.Bbright img {
+    width: 90%;
+}
