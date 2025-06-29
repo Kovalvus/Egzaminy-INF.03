@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia;
+    text-align: center;
+    background-color: lightsteelblue;
+}
+
+.Bform {
+    padding-top: 20px;
+}
+
+.Bmain {
+    overflow: scroll;
+    padding: 30px;
+    height: 400px;
+}
+
+.Bfooter {
+    background-color: Orange;
+    padding: 10px;
+}
+
+img {
+    width: 80%;
+}
+
+table {
+    width: 70%;
+    margin: auto;
+    border: dotted 1px maroon;
+}
+
+tr:hover {
+    background-color: steelblue;
+    color: white;
+}

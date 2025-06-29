@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+
+body {
+    background-color: lightsalmon;
+    text-align: center;
+}
+
+.Container {
+    display: flex;
+}
+
+.LeftContainer {
+    width: 30%;
+}
+
+.Bleft1 {
+    height: 400px;
+}
+
+.Bleft2 {
+    background-color: darksalmon;
+}
+
+.Bright {
+    background-color: darksalmon;
+    width: 70%;
+    height: 500px;
+    overflow: scroll;
+}
+
+img {
+    width: 100%;
+}
+
+.Filter {
+    font-style: italic;
+    font-size: 200%;
+    padding: 10px;
+}
+
+.Filter:hover {
+    color: ghostwhite;
+}
+
+table, td {
+    border: dotted 1px maroon;
+}
+
+table {
+    width: 70%;
+    margin: auto;
+    table-layout: fixed;
+}
