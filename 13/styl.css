@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    font-family: Tahoma;
+}
+
+.Banner {
+    background-color: #519657;
+    color: white;
+    text-align: center;
+    height: 150px;
+}
+
+.Banner1 {
+    width: 70%;
+}
+
+.Banner2 {
+    width: 30%;
+}
+
+.Block {
+    background-color: #E1E1E1;
+    height: 450px;
+}
+
+.LeftBlock, .RightBlock {
+    width: 25%;
+}
+
+.MiddleBlock {
+    width: 50%;
+    overflow: scroll;
+}
+
+.BFooter {
+    background-color: #80C683;
+    text-align: center;
+}
+
+.Container {
+    display: flex;
+}
+
+img[src="obraz2.jpg"] {
+    width: 100%;
+    padding: 100px 0px;
+}
+
+table {
+    border: 1px solid #80C683;
+}
+
+td {
+    padding: 2px;
+}
+
+tr:hover {
+    background-color: #80C683;
+}
+
+table tr:last-child {
+    background-color: red;
+}

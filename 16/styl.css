@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia;
+    color: white;
+}
+
+.Container {
+    display: flex;
+}
+
+.Bheader, .Bfooter {
+    background-color: #824555;
+    text-align: center;
+    padding: 20px;
+}
+
+.Bleft, .Bmiddle {
+    width: 30%;
+    height: 350px;
+}
+
+.Bleft {
+    background-color: #A26475;
+}
+
+.Bmiddle {
+    background-color: #824555;
+}
+
+.Bright {
+    background-color: #a26470;
+    width: 40%;
+    height: 350px;
+    overflow: scroll;
+}
+
+img {
+    float: left;
+    width: 50px;
+}
+
+table, p, dt {
+    margin: 10px;
+}
+
+dt {
+    padding-top: 20px;
+}
+
+th, td {
+    border: solid 3px #824555;
+    padding: 5px;
+}
