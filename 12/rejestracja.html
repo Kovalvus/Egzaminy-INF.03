@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header class="Banner">
+        <h1>Formularz rejestracyjny konferencji <em>Nasze Kwiaty</em></h1>
+    </header>
+
+    <section class="Main">
+        <form action="rejestracja.html">
+            <section class="FormBlockContainer">
+                <section class="FormBlock1 FormBlock" id="FormBlock1">
+                    <h2>Dane osobowe</h2>
+                    <input type="text" id="IName" placeholder="Wpisz imię...">
+                    <input type="text" id="ILastName" placeholder="Wpisz nazwisko...">
+                    <input type="button" value="Następna karta" onclick="Skrypt1()">
+                </section>
+
+                <section class="FormBlock2 FormBlock" id="FormBlock2">
+                    <h2>Dane kontaktowe</h2>
+                    <input type="email" id="IEmail" placeholder="Twój e-mail...">
+                    <input type="tel" id="ITelNum" placeholder="Twój numer telefonu...">
+                    <input type="button" value="Następna karta" onclick="Skrypt2()">
+                </section>
+
+                <section class="FormBlock3 FormBlock" id="FormBlock3">
+                    <h2>Hasło do logowania</h2>
+                    <input type="password" id="IPass" placeholder="Podaj hasło">
+                    <input type="password" id="IPassConfirm" placeholder="Powtórz hasło">
+                    <input type="submit" onclick="Skrypt3()">
+                </section>
+            </section>
+
+        </form>
+    </section>
+
+    <section class="FootersContainer">
+        <footer class="Bfooter1 Bfooter">
+            <video controls>
+                <source src="motyl.mp4" type="video/mp4">
+                Przeglądarka nie obsługuje tego formatu
+            </video>
+        </footer>
+
+        <footer class="Bfooter2 Bfooter">
+            <h3>Plan konferencji</h3>
+            <table>
+                <tr>
+                    <td>9:00 - 12:00</td>
+                    <td>Pielęgnacja roślin</td>
+                </tr>
+                <tr>
+                    <td>13:00 - 15:00</td>
+                    <td>Targi kwiatowe</td>
+                </tr>
+            </table>
+        </footer>
+
+        <footer class="Bfooter3 Bfooter">
+            <p><a href="https://kwiaty.pl/">Internetowa kwiaciarnia</a></p>
+        </footer>
+
+        <footer class="Bfooter4 Bfooter">
+            <p>Formularz wykonał: 00000000000</p>
+        </footer>
+    </section>
+
+    <script>
+        function Skrypt1() {
+            document.getElementById("FormBlock1").style.visibility = "hidden";
+            document.getElementById("FormBlock2").style.visibility = "visible";
+        }
+
+        function Skrypt2() {
+            document.getElementById("FormBlock2").style.visibility = "hidden";
+            document.getElementById("FormBlock3").style.visibility = "visible";
+        }
+        
+        function Skrypt3() {
+            $Pass = document.getElementById("IPass").value;
+            $PassConfirm = document.getElementById("IPassConfirm").value;
+            if($Pass != $PassConfirm) {
+                alert("Podane hasła różnią się")
+            }
+
+            $Name = document.getElementById("IName").value;
+            $LName = document.getElementById("ILastName").value;
+            console.log("Witaj "+$Name+" "+$LName);
+        }
+    </script>
+</body>
+</html>
